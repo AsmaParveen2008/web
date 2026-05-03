@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>NUMNOM</title>
+    <link rel=icon href="https://wallpapercave.com/wp/wp8465834.jpg"
+    
+        h1 { font-size: 36px; }
+
+    </head>
+
+    <body>
+    <center>
+        <h1>Welcome</h1>
+        <h1>Hello This Website Just For Fun</h1>
+    </center>
+    <center>
+    <body style="background-color: lightcyan;"></body>
+     <h2>Enter your choice:</h2>
+    <p>1 = Non-veg eater<br>
+       2 = Veg eater<br>
+       3 = Veg and Non-veg eater</p>
+
+    <input type="number" id="choice" placeholder="Enter a number">
+    <button onclick="checkPreference()">Submit</button>
+
+    <p id="result"></p>
+    
+    
+    <script>
+        function checkPreference() {
+            const n = parseInt(document.getElementById("choice").value);
+            const resultDiv=document.getElementById("result");
+            resultDiv.Innerhtml=" ";
+
+            if (n == 1) {
+                resultDiv.innerHTML = `
+                <p>You are a non veg eater</p>
+                <h2>MENU LIST</h2>
+                    <p>- Chicken Biryani</p>
+<p>- Mutton Curry</p>
+<p>- Fish Fry</p>
+<p>- Butter Chicken</p>
+<p>- Prawn Masala</p>
+<p>- Egg Curry</p>
+<p>- Chicken 65</p>
+<p>- Mutton Kebab</p>
+<p>- Crab Curry</p>
+<p>- Chicken Chettinad</p>
+
+                <img src="https://i.ytimg.com/vi/2u983B2wD1k/maxresdefault.jpg" alt="Non Veg" width="300" hight="500">
+                <p><a href="https://www.indianhealthyrecipes.com/recipes/non-veg/" target="_blank">CLICK TO LEARN VARIETY</a></p>
+                <h1>THANRYOU!....</h1>
+                <h1>VIST AGAIN</h1>
+                `;
+
+            } else if (n == 2) {
+                resultDiv.innerHTML=`
+                <P>You are veg eater</p>
+                <h2>MENU LIST</h2>
+                    <p>- Vegetable Biryani</p>
+<p>- Paneer Butter Masala</p>
+<p>- Aloo Gobi</p>
+<p>- Sambar</p>
+<p>- Palak Paneer</p>
+<p>- Chana Masala</p>
+<p>- Veg Kurma</p>
+
+                <img src="https://i.pinimg.com/originals/0f/13/7d/0f137d2a243f7b63e5716ab4c10c3ee3.jpg" alt="Veg" width="300" hight="500">
+                <p><a href="https://www.tasteatlas.com/best-rated-vegetarian-dishes-in-india" target="_blank">CLICK TO LEARN VARIETY</a></p>
+                <h1>THANRYOU!....</h1>
+                <h1>VIST AGAIN</h1>
+                `;
+            } else if (n == 3) {
+                resultDiv.innerHTML=`
+                <p>you are a veg and non veg eater</p>
+                <h2>MENU LIST</h2>
+                    <p>- Chicken Biryani</p>
+<p>- Mutton Curry</p>
+<p>- Fish Fry</p>
+<p>- Butter Chicken</p>
+<p>- Prawn Masala</p>
+<p>- Egg Curry</p>
+<p>- Chicken 65</p>
+<p>- Mutton Kebab</p>
+<p>- Crab Curry</p>
+<p>- Chicken Chettinad</p>
+<p>- Vegetable Biryani</p>
+<p>- Paneer Butter Masala</p>
+<p>- Aloo Gobi</p>
+<p>- Sambar</p>
+<p>- Palak Paneer</p>
+<p>- Chana Masala</p>
+<p>- Veg Kurma</p>
+
+                <img src="https://i.pinimg.com/736x/dc/3c/d8/dc3cd8263009b5fe4598d1b3ff0afa2d.jpg" alt="veg and non veg" width="300" hight="500">
+                <p><a href="https://en.wikipedia.org/wiki/List_of_Indian_dishes" target="_blank">CLICK TO LEARN VARIETY</a></p>
+                <h1>THANRYOU!....</h1>
+                <h1>VIST AGAIN</h1>
+                `;
+            } else {
+                resultDiv.innerHTML = "Invalid Input Kindly Refresh This Page And Try Again... You May Also Explore My Website...";
+            
+            }
+
+            document.getElementById("result").innerText = resultText;
+        }
+
+    </script>
+    </center>
+    </body>
+</html>
